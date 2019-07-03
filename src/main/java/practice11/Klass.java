@@ -1,5 +1,7 @@
 package practice11;
 
+import static java.util.Objects.isNull;
+
 public class Klass {
     private int number;
     private String displayName;
@@ -39,5 +41,19 @@ public class Klass {
 
     public void setLeader(Student student) {
         this.leader = student;
+    }
+
+    public void appendMember(Student student) {
+
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (isNull(obj)) {
+            return false;
+        }
+
+        Klass newKlass = (Klass) obj;
+        return this.number == newKlass.number;
     }
 }
