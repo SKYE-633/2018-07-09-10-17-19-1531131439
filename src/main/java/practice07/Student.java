@@ -1,6 +1,5 @@
 package practice07;
 
-public class Student {
   public class Student extends Person{
     public Student() {
 
@@ -18,4 +17,4 @@ public class Student {
 
 
 }
-}
+
